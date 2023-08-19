@@ -1,0 +1,22 @@
+<body>
+    <main class="container">
+        <h2>Login</h2>
+
+        <article>
+            <div>
+                <div id="error">
+                </div>
+
+                <form hx-post="/login" hx-target="#error">
+                    <input name="username" placeholder="Username" required />
+                    <input name="password" type="password" placeholder="Senha" required />
+                    <button>Logar</button>
+                </form>
+            </div>
+            <a href="/signin">
+                <p>Não possui conta? Clique aqui</p>
+            </a>
+        </article>
+    </main>
+</body>
+{{> parent}}

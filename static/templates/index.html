@@ -1,0 +1,20 @@
+<body>
+    <main class="container">
+    <div id="error-indicator"></div>
+   <form hx-post="/login" hx-target="#error-indicator">
+
+    <label for="username" hx-confirm="Are you sure you wish to delete your account?">
+        First name
+        <input type="text" id="username" name="username" placeholder="Nome" required>
+      </label>
+  
+      <label for="password">
+        Last name
+        <input type="password" id="password" name="password" placeholder="Senha" required>
+      </label>
+      <button type="submit" >Submit</button>
+   </form>
+
+    </main>
+</body>
+{{> parent}}  
